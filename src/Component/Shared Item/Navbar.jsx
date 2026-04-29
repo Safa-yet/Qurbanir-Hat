@@ -18,7 +18,7 @@ const Links = <>
       const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
              <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
-      <header className="mx-auto flex   items-center justify-between px-8 py-1">
+      <header className="mx-auto flex   items-center justify-between container">
         <div className="flex items-center gap-4 justify-between  w-full md:w-fit">
           <button
             className="md:hidden"
