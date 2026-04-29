@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @import "@heroui/styles";
+
+
+.container{
+  @apply
+  container px-3
+}

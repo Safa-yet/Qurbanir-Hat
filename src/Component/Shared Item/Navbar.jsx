@@ -12,8 +12,8 @@ const Navbar = () => {
     const pathName = usePathname();
 const Links = <>
 <Link href='/' className={`${pathName === '/' ? 'text-green-600 font-bold' : "text-gray-600"}`}>Home</Link>
-<Link href='/'  className={`${pathName === '/animal' ? 'text-green-600 font-bold' : "text-gray-600"}`}>All Animal</Link>
-<Link href='/'  className={`${pathName === '/contact' ? 'text-green-600 font-bold' : "text-gray-600"}`}>Contact</Link>
+<Link href='/animal'  className={`${pathName === '/animal' ? 'text-green-600 font-bold' : "text-gray-600"}`}>All Animal</Link>
+<Link href='/contact'  className={`${pathName === '/contact' ? 'text-green-600 font-bold' : "text-gray-600"}`}>Contact</Link>
 </>
       const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
