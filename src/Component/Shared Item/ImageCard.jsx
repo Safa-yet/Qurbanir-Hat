@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaLocationDot } from 'react-icons/fa6';
 
 const ImageCard = ({cow}) => {
-    const {name,type,breed,price,weight,age,location,description,image,category}= cow
+    const {id,name,type,breed,price,weight,age,location,description,image,category}= cow
     return (
        <div className="card bg-base-100  shadow-sm">
   <figure className='w-full h-60'>
@@ -12,18 +13,20 @@ const ImageCard = ({cow}) => {
       alt="Shoes" width={500} height={500}  className='object-center w-full'/>
   </figure>
   <div className="card-body">
-    <h2 className="card-title justify-between">
+    <h2 className="card-title justify-between text-green-00 ">
       {name}
       <div className="badge badge-success rounded-2xl text-xs">{category}</div>
     </h2>
     <div></div>
-    <span>{breed}</span>
+    <span className='font-semibold'>{breed}</span>
     <span>Weight : {weight}</span>
     <div className='flex gap-1 items-center '>
       location : <FaLocationDot /> <p>{location}</p>
     </div>
-    <p>{description}</p>
-    <button className='btn btn-warning'>View Details</button>
+    <p className='line-clamp-2 text-gray-500'>{description}</p>
+    <Link href={`/animal/${id}`} >
+    <button className='btn btn-warning w-full'>View Details</button>
+    </Link>
   </div>
 </div>
     );

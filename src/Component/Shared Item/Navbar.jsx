@@ -27,7 +27,7 @@ const Navbar = () => {
         href="/animal"
         className={`${pathName === "/animal" ? "text-green-600 font-bold" : "text-gray-600"}`}
       >
-        All Animal
+        All Animals
       </Link>
       <Link
         href="/contact"

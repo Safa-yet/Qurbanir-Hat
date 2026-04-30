@@ -8,7 +8,7 @@
     "weight": 280,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani.",
+    "description": "Healthy deshi cow suitable for Qurbani. Raised in a natural farm environment with regular care, proper feeding, and maintained in good health condition to ensure quality meat.",
     "image": "/img/alpine-mountain-cow-france-spring.jpg",
     "category": "Large Animal"
   },
@@ -21,7 +21,7 @@
     "weight": 350,
     "age": 4,
     "location": "Rajshahi",
-    "description": "Premium Sahiwal breed, large and strong.",
+    "description": "Premium Sahiwal breed, large and strong. Well-maintained with a balanced diet and proper farm care, known for its strong body structure and high-quality meat production.",
     "image": "/img/limousin-cows-standing-row-green-field.jpg",
     "category": "Large Animal"
   },
@@ -34,7 +34,7 @@
     "weight": 35,
     "age": 2,
     "location": "Dhaka",
-    "description": "Small but very popular goat for Qurbani.",
+    "description": "Small but very popular goat for Qurbani. Known for its excellent meat quality and high demand, raised with proper care and healthy feeding practices.",
     "image": "/img/front-view-portrait-goat.jpg",
     "category": "Small Animal"
   },
@@ -47,7 +47,7 @@
     "weight": 45,
     "age": 2.5,
     "location": "Chattogram",
-    "description": "Large-sized goat with good growth.",
+    "description": "Large-sized goat with good growth. Attractive appearance with a strong body, raised in a healthy farm environment and suitable for premium buyers.",
     "image": "/img/vertical-shot-goat-with-its-mouth-open-north-sweden.jpg",
     "category": "Small Animal"
   },
@@ -60,7 +60,7 @@
     "weight": 420,
     "age": 5,
     "location": "Khulna",
-    "description": "Large and strong bull.",
+    "description": "Large and strong bull. Crossbred for better growth and higher meat yield, maintained with proper nutrition and consistent farm care.",
     "image": "/img/cows-standing-green-field-front-fuji-mountain-japan.jpg",
     "category": "Large Animal"
   },
@@ -73,7 +73,7 @@
     "weight": 28,
     "age": 1.8,
     "location": "Sylhet",
-    "description": "A good option for a low budget.",
+    "description": "A good option for a low budget. Healthy local goat raised with regular feeding and care, suitable for Qurbani within an affordable price range.",
     "image": "/img/goat-others-front-wall.jpg",
     "category": "Small Animal"
   },
@@ -86,7 +86,7 @@
     "weight": 380,
     "age": 4,
     "location": "Dhaka",
-    "description": "Large foreign breed cow.",
+    "description": "Large foreign breed cow. Holstein Friesian known for its big size and premium quality, raised with proper feeding and farm supervision.",
     "image": "/img/beautiful-cow-green-grass-with-blue-sky.jpg",
     "category": "Large Animal"
   },
@@ -99,7 +99,7 @@
     "weight": 300,
     "age": 3,
     "location": "Chattogram",
-    "description": "A popular local breed in Bangladesh.",
+    "description": "A popular local breed in Bangladesh. Strong and healthy cow with good meat quality, raised under proper care and balanced nutrition.",
     "image": "/img/photorealistic-view-cow-grazing-nature-outdoors2.jpg",
     "category": "Large Animal"
   },
@@ -112,7 +112,7 @@
     "weight": 50,
     "age": 3,
     "location": "Rajshahi",
-    "description": "Foreign breed goat with fast growth.",
+    "description": "Foreign breed goat with fast growth. Known for its large size and premium meat production, well-maintained and raised in a controlled environment.",
     "image": "/img/vertical-shot-goat-with-its-mouth-open-north-sweden.jpg",
     "category": "Small Animal"
   },
@@ -125,7 +125,7 @@
     "weight": 290,
     "age": 3,
     "location": "Mymensingh",
-    "description": "Medium-sized cow.",
+    "description": "Medium-sized cow. Balanced body structure with proper care and feeding, suitable for Qurbani and general purchase needs.",
     "image": "/img/white-bovine-ox-grazing-agricultural-field-goa-india.jpg",
     "category": "Large Animal"
   },
@@ -138,7 +138,7 @@
     "weight": 30,
     "age": 2,
     "location": "Barishal",
-    "description": "Beautiful white-colored goat.",
+    "description": "Beautiful white-colored goat. Clean and healthy with a well-maintained body, raised with proper feeding and suitable for Qurbani.",
     "image": "/img/goat-others-front-wall.jpg",
     "category": "Small Animal"
   },
@@ -151,7 +151,7 @@
     "weight": 310,
     "age": 3,
     "location": "Khulna",
-    "description": "Brown-colored cow.",
+    "description": "Brown-colored cow. Strong and healthy with a well-balanced body, raised with consistent care and nutritious feeding practices.",
     "image": "/img/selective-focus-shot-brown-cow-with-rope-around-its-neck.jpg",
     "category": "Large Animal"
   },
@@ -164,7 +164,7 @@
     "weight": 22,
     "age": 1.5,
     "location": "Dhaka",
-    "description": "Small-sized goat.",
+    "description": "Small-sized goat. Compact and healthy, ideal for buyers looking for a lightweight and budget-friendly option with proper care.",
     "image": "/img/vertical-shot-goat-with-its-mouth-open-north-sweden.jpg",
     "category": "Small Animal"
   },
@@ -177,7 +177,7 @@
     "weight": 450,
     "age": 5,
     "location": "Rajshahi",
-    "description": "Very large-sized cow.",
+    "description": "Very large-sized cow. Strong and heavy body structure, raised with high-quality feed and proper farm management for premium buyers.",
     "image": "/img/photorealistic-view-cow-grazing-nature-outdoors2.jpg",
     "category": "Large Animal"
   },
@@ -190,7 +190,7 @@
     "weight": 32,
     "age": 2,
     "location": "Sylhet",
-    "description": "Spotted patterned goat.",
+    "description": "Spotted patterned goat. Attractive appearance with a healthy body, raised with proper feeding and suitable for Qurbani.",
     "image": "/img/goat-others-front-wall.jpg",
     "category": "Small Animal"
   },
@@ -203,7 +203,7 @@
     "weight": 390,
     "age": 4,
     "location": "Dhaka",
-    "description": "Premium quality cow.",
+    "description": "Premium quality cow. Crossbreed with strong genetics, large body size, and excellent health condition, suitable for high-end buyers.",
     "image": "/img/cows-standing-green-field-front-fuji-mountain-japan.jpg",
     "category": "Large Animal"
   },
@@ -216,7 +216,7 @@
     "weight": 300,
     "age": 3,
     "location": "Bogura",
-    "description": "Raised on natural grass feed.",
+    "description": "Raised on natural grass feed. Healthy and naturally grown with proper care, ensuring better meat quality and overall condition.",
     "image": "/img/brown-bull-grazing-pasture-sunny-day.jpg",
     "category": "Large Animal"
   },
@@ -229,7 +229,7 @@
     "weight": 36,
     "age": 2,
     "location": "Chattogram",
-    "description": "Healthy and high-quality goat.",
+    "description": "Healthy and high-quality goat. Black Bengal breed with strong body structure and excellent meat quality, raised with proper care.",
     "image": "/img/black-sheep-portrait.jpg",
     "category": "Small Animal"
   },
@@ -242,7 +242,7 @@
     "weight": 280,
     "age": 3,
     "location": "Mymensingh",
-    "description": "Raised on a farm.",
+    "description": "Raised on a farm. Well-maintained with natural feeding and consistent care, ensuring good health and suitable for Qurbani.",
     "image": "/img/cow-eat-grass-food.jpg",
     "category": "Large Animal"
   },
@@ -255,7 +255,7 @@
     "weight": 25,
     "age": 1.5,
     "location": "Barishal",
-    "description": "Young but healthy goat.",
+    "description": "Young but healthy goat. Active and in good condition, raised with proper feeding and care, suitable for budget-conscious buyers.",
     "image": "/img/vertical-selective-focus-shot-black-white-cow-green-field-near-pond.jpg",
     "category": "Small Animal"
   }
