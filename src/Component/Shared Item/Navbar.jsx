@@ -1,23 +1,45 @@
-'use client'
+"use client";
 import { useState } from "react";
-import {  Button } from "@heroui/react";
-import logoImg from '../../image/logo.png'
+import { Avatar, Button, Spinner } from "@heroui/react";
+import logoImg from "../../image/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import { authClient } from "@/lib/auth-client";
 
 const Navbar = () => {
+  const { data: session, isPending } = authClient.useSession();
 
-    const pathName = usePathname();
-const Links = <>
-<Link href='/' className={`${pathName === '/' ? 'text-green-600 font-bold' : "text-gray-600"}`}>Home</Link>
-<Link href='/animal'  className={`${pathName === '/animal' ? 'text-green-600 font-bold' : "text-gray-600"}`}>All Animal</Link>
-<Link href='/contact'  className={`${pathName === '/contact' ? 'text-green-600 font-bold' : "text-gray-600"}`}>Contact</Link>
-</>
-      const [isMenuOpen, setIsMenuOpen] = useState(false);
-    return (
-             <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
+  const userProfile = session?.user;
+
+  console.log(session);
+
+  const pathName = usePathname();
+  const Links = (
+    <>
+      <Link
+        href="/"
+        className={`${pathName === "/" ? "text-green-600 font-bold" : "text-gray-600"}`}
+      >
+        Home
+      </Link>
+      <Link
+        href="/animal"
+        className={`${pathName === "/animal" ? "text-green-600 font-bold" : "text-gray-600"}`}
+      >
+        All Animal
+      </Link>
+      <Link
+        href="/contact"
+        className={`${pathName === "/contact" ? "text-green-600 font-bold" : "text-gray-600"}`}
+      >
+        Contact
+      </Link>
+    </>
+  );
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  return (
+    <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
       <header className="mx-auto flex   items-center justify-between container">
         <div className="flex items-center gap-4 justify-between  w-full md:w-fit">
           <button
@@ -51,22 +73,79 @@ const Links = <>
             </svg>
           </button>
           <div className="w-30  flex items-center justify-center">
-          
-            <Image src={logoImg} alt="logo" sizes="lg" width={300} height={100} ></Image>
+            <Image
+              src={logoImg}
+              alt="logo"
+              sizes="lg"
+              width={300}
+              height={100}
+            ></Image>
             {/* <h1 className="text-xl font-bold text-green-500">QurbanirHatt</h1> */}
           </div>
         </div>
-        <ul className="hidden items-center gap-4 md:flex">
-        {Links}
-        </ul>
-        <div className="hidden items-center gap-4 md:flex">
-         <Link href='/auth/signin'>
-              <Button className="w-full rounded-lg " variant="outline">Sign In</Button>
-              </Link>
-         <Link href='/auth/signup'>
-              <Button className="w-full bg-green-600 rounded-lg" >Sign Up</Button>
-              </Link>
-        </div>
+        <ul className="hidden items-center gap-4 md:flex">{Links}</ul>
+        {isPending ? (
+          <div className="flex flex-col items-center gap-2">
+            <Spinner color="success" />
+          </div>
+        ) : (
+          <div className="hidden items-center gap-4 md:flex">
+            {session ? (
+              <>
+                <h1>
+                  Hello,{" "}
+                  <span className="text-lg uppercase">{userProfile.name}</span>
+                </h1>
+
+                <div className="dropdown dropdown-end">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="btn btn-ghost btn-circle avatar"
+                  >
+                    <div className="w-10 rounded-full">
+                      <Image
+                        alt="User Avatar"
+                        src={userProfile.image}
+                        refferpolicy='no-reffer'
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </div>
+
+                  <ul
+                    tabIndex={0}
+                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
+                  >
+                    <li>
+                      <a className="justify-between">
+                        Profile
+                        <span className="badge">New</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a onClick={()=>authClient.signOut()}>Logout</a>
+                    </li>
+                  </ul>
+                </div>
+              </>
+            ) : (
+              <>
+                <Link href="/auth/signin">
+                  <Button className="w-full rounded-lg " variant="outline">
+                    Sign In
+                  </Button>
+                </Link>
+                <Link href="/auth/signup">
+                  <Button className="w-full bg-green-600 rounded-lg">
+                    Sign Up
+                  </Button>
+                </Link>
+              </>
+            )}
+          </div>
+        )}
       </header>
       {isMenuOpen && (
         <div className="border-t border-separator md:hidden">
@@ -76,15 +155,15 @@ const Links = <>
               <Link href="#" className="block py-2">
                 Login
               </Link>
-              <Link href='/auth/signup'>
-              <Button className="w-full bg-green-600">Sign Up</Button>
+              <Link href="/auth/signup">
+                <Button className="w-full bg-green-600">Sign Up</Button>
               </Link>
             </li>
           </ul>
         </div>
       )}
     </nav>
-    );
+  );
 };
 
 export default Navbar;

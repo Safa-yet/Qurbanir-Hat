@@ -8,17 +8,22 @@ import {Button, Description, FieldError, Form, Input, Label, TextField} from "@h
 import Link from 'next/link';
 import { FaApple, FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
+import { authClient } from '@/lib/auth-client';
+import SocialLink from '@/Component/Shared Item/SocialLink';
 
 const SignInPage = () => {
-     const onSubmit = (e) => {
+     const onSubmit = async(e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    // Convert FormData to plain object
-    formData.forEach((value, key) => {
-      data[key] = value.toString();
-    });
+        const userData = Object.fromEntries(formData.entries());
 
-    alert(`Form submitted with: ${JSON.stringify(data, null, 2)}`);
+    const { data, error } = await authClient.signIn.email({
+    email: userData.email, // required
+    password: userData.password, // required
+    rememberMe: true,
+    callbackURL: '/',
+});
+    
   };
 
     return (
@@ -85,23 +90,13 @@ const SignInPage = () => {
       <div>
         <div>
         <p className="text-sm text-center">
-  Dont have an account?
+  Dont have an account? 
   <Link href="/auth/signup" className="text-blue-600 hover:underline">
-    Sign up
+    Register
   </Link></p>
 
 <p className='text-sm text-center'>Select any option below to continue.</p>
- <div className="flex gap-3 items-center justify-center mt-5">
-      <Button isIconOnly variant="tertiary">
-        <FcGoogle />
-      </Button>
-      <Button isIconOnly variant="secondary">
-        <FaApple />
-      </Button>
-      <Button isIconOnly variant="danger">
-        <FaGithub></FaGithub>
-      </Button>
-    </div>
+<SocialLink></SocialLink>
 
         </div>
 
