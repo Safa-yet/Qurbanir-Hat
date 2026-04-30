@@ -4,11 +4,11 @@ import { BiEnvelope } from 'react-icons/bi';
 import { toast } from "react-toastify";
 const BookForm = () => {
       const clickBook = ()=>{
-toast("Done")
+toast.success(" ✔ Booking submitted successfully!")
   }
     return (
           <Modal>
-              <Button variant="primary">Book Now</Button>
+              <Button className='bg-green-600 rounded-lg' >Book Now</Button>
               <Modal.Backdrop>
                 <Modal.Container placement="auto">
                   <Modal.Dialog className="sm:max-w-md">
@@ -17,7 +17,7 @@ toast("Done")
                       <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
                         <BiEnvelope className="size-5" />
                       </Modal.Icon>
-                      <Modal.Heading>Contact Us</Modal.Heading>
+                      <Modal.Heading>Book Your Animal</Modal.Heading>
                       <p className="mt-1.5 text-sm leading-5 text-muted">
                         Fill out the form below to book your selected animal. 
         Please provide accurate information so we can contact you and confirm your booking.

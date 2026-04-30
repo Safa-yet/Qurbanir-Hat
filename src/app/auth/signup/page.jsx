@@ -11,6 +11,7 @@ import { authClient } from '@/lib/auth-client';
 import { useRouter } from 'next/navigation';
 
 import SocialLink from '@/Component/Shared Item/SocialLink';
+import { toast } from 'react-toastify';
 
 
 
@@ -31,9 +32,15 @@ const { data, error } = await authClient.signUp.email({
 {
   onSuccess: ()=>{
     router.push("/");
+    toast.success("Registation Successfull")
   }
 
 });
+
+if(error){
+  toast.error(error.message)
+}
+
 
 
 console.log("SignUp   :" ,data,error);
@@ -42,14 +49,14 @@ console.log("SignUp   :" ,data,error);
 
     return (
             <div className='relative'>
-                  <div className='h-screen'>
+                  <div className='md:h-screen h-[90vh]'>
                   <Image src={formBg} alt='Login Page Background' fill className='object-cover'></Image>
       
                   </div>
       
-      <div className='absolute top-0 flex items-center justify-center w-full h-screen inset-0 bg-black/50'>
+      <div className='absolute top-0 flex items-center justify-center w-full  h-screen inset-0 bg-black/50'>
       <div className='px-5'>
-        <div className='mb-10 text-center'>
+        <div className='mb-6 text-center'>
 <h1 className='text-2xl   text-white'>Create your account</h1>
 <p className='text-gray-300'>Join thousands buying Qurbani animals with trust</p>
 
@@ -122,14 +129,14 @@ console.log("SignUp   :" ,data,error);
             </TextField>
       
               <Button type="submit" className={'w-full bg-amber-400 rounded-xl'}>
-                Submit
+                Sign Up
               </Button>
       
           </Form>
             <div>
               <div>
       
-      <p className='text-sm text-center'>Select any option below to continue.</p>
+      <p className='text-sm text-center my-4'>Select any option below to continue.</p>
       <SocialLink></SocialLink>
       
               </div>

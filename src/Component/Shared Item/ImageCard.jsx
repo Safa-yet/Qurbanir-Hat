@@ -1,3 +1,4 @@
+import { Chip } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -13,12 +14,12 @@ const ImageCard = ({cow}) => {
       alt="Shoes" width={500} height={500}  className='object-center w-full'/>
   </figure>
   <div className="card-body">
-    <h2 className="card-title justify-between text-green-00 ">
+    <h2 className="card-title justify-between text-xl font-blod  text-green-800 ">
       {name}
       <div className="badge badge-success rounded-2xl text-xs">{category}</div>
     </h2>
-    <div></div>
-    <span className='font-semibold'>{breed}</span>
+    <h3 className='text-lg font-semibold'>Price:${price}</h3>
+    <span >{breed}</span>
     <span>Weight : {weight}</span>
     <div className='flex gap-1 items-center '>
       location : <FaLocationDot /> <p>{location}</p>
