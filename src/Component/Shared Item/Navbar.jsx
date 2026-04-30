@@ -60,10 +60,10 @@ const Links = <>
         {Links}
         </ul>
         <div className="hidden items-center gap-4 md:flex">
-         <Link href='/signup'>
-              <Button className="w-full rounded-lg " variant="outline">Sign Up</Button>
+         <Link href='/auth/signin'>
+              <Button className="w-full rounded-lg " variant="outline">Sign In</Button>
               </Link>
-         <Link href='/signup'>
+         <Link href='/auth/signup'>
               <Button className="w-full bg-green-600 rounded-lg" >Sign Up</Button>
               </Link>
         </div>
@@ -76,7 +76,7 @@ const Links = <>
               <Link href="#" className="block py-2">
                 Login
               </Link>
-              <Link href='/signup'>
+              <Link href='/auth/signup'>
               <Button className="w-full bg-green-600">Sign Up</Button>
               </Link>
             </li>

@@ -12,32 +12,32 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css'
 
 const Banner = () => {
-  const slides = [
-    {
-      id: 1,
-      title: "সহজেই খুঁজে নিন আপনার পছন্দের কোরবানির পশু",
-      subtitle: "আধুনিক উপায়ে, নিশ্চিত",
-      img: bannerImg1,
-    },
-    {
-      id: 2,
-      title: "সেরা গরু ও ছাগল সংগ্রহ",
-      subtitle: "বিশ্বাসযোগ্য বিক্রেতা",
-      img: bannerImg2,
-    },
-    {
-      id: 3,
-      title: "অনলাইনে বুক করুন কোরবানির পশু",
-      subtitle: "দ্রুত ও সহজ",
-      img: bannerImg3,
-    },
-    {
-      id: 4,
-      title: "আপনার বাজেট অনুযায়ী পশু",
-      subtitle: "সবচেয়ে ভালো দামে",
-      img: bannerImg4,
-    },
-  ];
+ const slides = [
+  {
+    id: 1,
+    title: "Easily find your preferred Qurbani animal",
+    subtitle: "Modern method, guaranteed",
+    img: bannerImg1,
+  },
+  {
+    id: 2,
+    title: "Best collection of cows and goats",
+    subtitle: "Trusted sellers",
+    img: bannerImg2,
+  },
+  {
+    id: 3,
+    title: "Book your Qurbani animal online",
+    subtitle: "Fast and easy",
+    img: bannerImg3,
+  },
+  {
+    id: 4,
+    title: "Animals according to your budget",
+    subtitle: "Best prices available",
+    img: bannerImg4,
+  },
+];
 
   return (
     
@@ -66,7 +66,7 @@ const Banner = () => {
 
               <div className="absolute inset-0 bg-black/60 flex items-center">
                 <div className="text-white px-6 md:px-16 max-w-xl">
-                  <h1 className="text-xl md:text-4xl font-bold mb-3">
+                  <h1 className="text-xl md:text-5xl font-bold mb-3">
                     {slide.title}
                   </h1>
 

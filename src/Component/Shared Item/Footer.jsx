@@ -19,9 +19,7 @@ const Footer = () => {
             ></Image>
           </div>
           <p className="text-sm text-gray-400 leading-6 text-justify ">
-            আমরা একটি বিশ্বস্ত অনলাইন প্ল্যাটফর্ম যেখানে আপনি সহজেই আপনার
-            পছন্দের কোরবানির পশু খুঁজে পেতে পারেন। আমাদের লক্ষ্য হলো নিরাপদ ও
-            সহজ সেবা প্রদান করা।
+            We are a trusted online platform where you can easily find your preferred Qurbani animal. Our goal is to provide a safe and simple service.
           </p>
         </div>
         <div>
