@@ -119,10 +119,10 @@ const Navbar = () => {
                     className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
                   >
                     <li>
-                      <a className="justify-between">
+                      <Link className="justify-between" href='/profile'>
                         Profile
                         <span className="badge">New</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a onClick={()=>authClient.signOut()}>Logout</a>
