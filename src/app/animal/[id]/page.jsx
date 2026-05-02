@@ -5,7 +5,7 @@ import React from 'react';
 import bg from '../../../../public/img/photorealistic-view-cow-grazing-nature-outdoors2.jpg'
 import { Card, CloseButton} from "@heroui/react";
 import { MdOutlineMonitorWeight } from 'react-icons/md';
-import { GiCow, GiDna2, GiWeightScale } from 'react-icons/gi';
+import { GiCow, GiDna2, GiGoat, GiWeightScale } from 'react-icons/gi';
 import { FcCalendar } from 'react-icons/fc';
 import { FaLocationDot } from 'react-icons/fa6';
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
@@ -28,7 +28,11 @@ const findCow = data.find((cow)=> cow.id == id);
 
     return (
       <div className='container mx-auto py-8'>
-        <h1 className='text-2xl mb-4'>Animal Details</h1>
+        <div>
+        <h1 className='text-3xl font-bold'>Animal Details</h1>
+        <div className='h-1 w-20 bg-green-600 rounded-full mt-2 mb-4'></div>
+
+        </div>
 
 <div className="card card-side  flex-col flex md:flex-row justify-between items-center h-[80vh] rounded-2xl">
   <figure className='lg:w-1/2 aspect-square rounded-2xl'>
@@ -37,19 +41,19 @@ const findCow = data.find((cow)=> cow.id == id);
       alt="Movie" width={500} height={500} className='w-full object-contain '/>
   </figure>
   <div className="card-body lg:w-1/2 ">
-    <h2 className="card-title text-4xl font-bold text-green-700">{name}</h2>
-    <p className='flex  items-center gap-1 text-lg'> 
-       <FaLocationDot /> {location}
+    <h2 className="card-title text-4xl font-bold ">{name}</h2>
+    <p className='flex  items-center gap-1 text-lg text-gray-500'> 
+       <FaLocationDot className='text-red-500' /> {location}
 
       </p> 
     
     <div>
-      <button className="btn text-xl bg-amber-400 text-white rounde-xl">${price}</button>
+      <h1 className=" text-2xl  text-green-600  font-bold">${price}</h1>
       
     </div>
     <div className='grid grid-cols-2 gap-5'>
       <div className='border rounded-xl flex p-3 gap-3 border-gray-200'>
-        <GiWeightScale  className='text-5xl'/>
+        <GiWeightScale  className='text-5xl text-green-500'/>
         
         <div>
 
@@ -67,7 +71,7 @@ const findCow = data.find((cow)=> cow.id == id);
         </div>
       </div>
       <div className='border rounded-xl flex p-3 gap-3 border-gray-200'>
-        <GiDna2   className='text-5xl'/>
+        <GiDna2   className='text-5xl text-purple-500'/>
         
         <div>
 
@@ -76,7 +80,13 @@ const findCow = data.find((cow)=> cow.id == id);
         </div>
       </div>
       <div className='border rounded-xl flex p-3 gap-3 border-gray-200'>
-        <GiCow    className='text-5xl'/>
+        {
+          type == "Cow"? 
+          <GiCow    className='text-5xl text-orange-500'/>:
+          <GiGoat  className='text-5xl text-orange-500' />
+        }
+          
+        
         
         <div>
 

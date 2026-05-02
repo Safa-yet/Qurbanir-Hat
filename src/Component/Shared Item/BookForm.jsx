@@ -39,7 +39,7 @@ toast.success(" ✔ Booking submitted successfully!")
                             <Input placeholder="Enter your phone number" />
                           </TextField>
                           <TextField className="w-full" name="company">
-                            <Label>Address</Label>
+                            <Label>Delivery Address</Label>
                             <Input placeholder="Enter your company name" />
                           </TextField>
                           <TextField className="w-full" name="message">
@@ -50,7 +50,7 @@ toast.success(" ✔ Booking submitted successfully!")
                       <Button slot="close" variant="secondary">
                         Cancel
                       </Button>
-                      <Button type="submit">Send Message</Button>
+                      <Button type="submit">Confirm Booking Request</Button>
                     </Modal.Footer>
                         </form>
                       </Surface>

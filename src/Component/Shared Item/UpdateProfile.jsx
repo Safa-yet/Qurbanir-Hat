@@ -1,6 +1,7 @@
 // "use client"
 import { authClient } from "@/lib/auth-client";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
+import { FaUserEdit } from "react-icons/fa";
 
 const UpdateProfile = () => {
 
@@ -19,7 +20,7 @@ await authClient.updateUser({
     }
     return (
        <Modal>
-      <Button variant="primary" className='w-full my-4 rounded-lg bg-amber-500' size="xl">Update Your Profile</Button>
+      <Button variant="primary" className='w-full my-4 rounded-lg bg-amber-500' size="xl"><FaUserEdit className="" /> Update Your Profile</Button>
       <Modal.Backdrop>
         <Modal.Container placement="auto">
           <Modal.Dialog className="sm:max-w-md">

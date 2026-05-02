@@ -63,6 +63,8 @@ const topBreeds = [
         <div className='container mx-auto py-16 '>
             <p className='text-amber-400 flex gap-1 font-semibold items-center mb-2'><RiGeminiLine /> Qurbani Guide</p>
             <h1 className={ `text-3xl font-bold ${syne.className}`}>Essential <span className='text-amber-400'>Quarbani Tips</span></h1>
+        <div className='h-1 w-30 bg-amber-600 rounded-full mt-2 mb-6 '></div>
+
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-10'>
                 {
                     qurbaniTips.map(tips =>
@@ -83,6 +85,8 @@ const topBreeds = [
         <div className='container mx-auto my-16'>
             <p className='text-green-600 flex gap-1 font-semibold items-center mb-2'><RiGeminiLine /> Popular Choices</p>
             <h1 className={ `text-3xl font-bold ${syne.className}`}>Top <span className='text-green-600'>Breeds</span> This Season</h1>
+        <div className='h-1 w-20 bg-green-600 rounded-full mt-2 mb-6 '></div>
+
 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 my-10'>
                 {
                     topBreeds.map(breed =>

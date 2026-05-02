@@ -24,35 +24,19 @@ const AllAnimalPage = () => {
 
   return (
     <div className="container mx-auto py-12">
-      <div className="flex justify-between items-center ">
-        <h1 className="text-2xl mb-10">All Animal</h1>
-        <Select className="w-[256px]" placeholder="Select one">
-          <Label>Sort By Price</Label>
-          <Select.Trigger>
-            <Select.Value />
-            <Select.Indicator />
-          </Select.Trigger>
-          <Select.Popover>
-            <ListBox>
-              <ListBox.Item
-                id="florida"
-                textValue="low"
-                onClick={() => setSortType("low")}
-              >
-                Low to High
-                <ListBox.ItemIndicator />
-              </ListBox.Item>
-              <ListBox.Item
-                id="delaware"
-                textValue="high"
-                onClick={() => setSortType("high")}
-              >
-                High to Low
-                <ListBox.ItemIndicator />
-              </ListBox.Item>
-            </ListBox>
-          </Select.Popover>
-        </Select>
+      <div className="flex justify-between items-center mb-3">
+        <h1 className="text-2xl">All Animal</h1>
+        <div >
+          <p className="mb-1" >Sort By :</p>
+
+
+    <select defaultValue="Price" className="select ">
+  <option disabled={true}>Price</option>
+  <option onClick={()=>setSortType("high")}>Low to High</option>
+  <option  onClick={()=>setSortType("low")}>High to Low</option>
+
+</select>
+        </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {sortedData.map((cow) => (
@@ -64,3 +48,6 @@ const AllAnimalPage = () => {
 };
 
 export default AllAnimalPage;
+
+                // onClick={() => setSortType("high")}
+                // onClick={() => setSortType("low")}
