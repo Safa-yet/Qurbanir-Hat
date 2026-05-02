@@ -49,5 +49,3 @@ const AllAnimalPage = () => {
 
 export default AllAnimalPage;
 
-                // onClick={() => setSortType("high")}
-                // onClick={() => setSortType("low")}

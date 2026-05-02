@@ -20,7 +20,7 @@ export const syne = Alegreya({
 
 export const metadata = {
   title: "QurbanirHat",
-  description: "A Modern Cow Market",
+  description: "A modern livestock marketplace where users can explore animals for Qurbani such as cows and goats",
 };
 
 export default function RootLayout({ children }) {

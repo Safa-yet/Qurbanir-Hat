@@ -3,7 +3,9 @@ import React from 'react';
 import NotFoundImage from '../image/canvas.png'
 import { Button } from '@heroui/react';
 import Link from 'next/link';
-
+export const metadata = {
+  title: "404-QurbanirHat",
+};
 const NotFoundPage = () => {
     return (
         <div className='h-screen flex items-center justify-center flex-col'>
