@@ -4,12 +4,12 @@ import { Button } from '@heroui/react';
 import Link from 'next/link';
 import { TbTopologyStar3 } from 'react-icons/tb';
 import { syne } from '@/app/layout';
+import ApiCalling from '@/app/ApiCalling';
 
 const FeaturedAnimal = async() => {
-    const res = await fetch("http://localhost:3000/data.json");
-    const data = await res.json();
+const {data} =await ApiCalling();
 
-    console.log(data);
+    console.log( "Text api calling", data);
 
     return (
         <div className='container mx-auto py-12' id='featured-animal'>

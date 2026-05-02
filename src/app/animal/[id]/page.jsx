@@ -11,11 +11,11 @@ import { FaLocationDot } from 'react-icons/fa6';
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
 import { BiEnvelope } from 'react-icons/bi';
 import BookForm from '@/Component/Shared Item/BookForm';
+import ApiCalling from '@/app/ApiCalling';
 
 const AnimalDetails = async({params}) => {
   const {id} = await params;
-   const res = await fetch("http://localhost:3000/data.json");
-    const data = await res.json();
+const{data} =await ApiCalling();
 console.log("details", data);
 
 
