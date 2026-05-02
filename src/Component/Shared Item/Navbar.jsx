@@ -151,14 +151,70 @@ const Navbar = () => {
         <div className="border-t border-separator md:hidden">
           <ul className="flex flex-col gap-2 p-4">
             {Links}
+           {isPending ? (
+          <div className="flex flex-col items-center gap-2">
+            <Spinner color="success" />
+          </div>
+        ) : (
+        
+          <>
+          {session ? (
+            <>
+              <h1>
+                Hello,{" "}
+                <span className="text-lg uppercase">{userProfile.name}</span>
+              </h1>
+
+              <div className="dropdown dropdown-end ">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle avatar"
+                >
+                  <div className="w-10 rounded-full">
+                    <Image
+                      alt="User Avatar"
+                      src={userProfile.image}
+                      refferpolicy='no-reffer'
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </div>
+
+                <ul
+                  tabIndex={0}
+                  className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
+                >
+                  <li>
+                    <Link className="justify-between" href='/profile'>
+                      Profile
+                      <span className="badge">New</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <a onClick={()=>authClient.signOut()}>Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </>
+          ) : (
+            <>
             <li className="mt-4 flex flex-col gap-2 border-t border-separator pt-4">
-              <Link href="#" className="block py-2">
-                Login
-              </Link>
-              <Link href="/auth/signup">
-                <Button className="w-full bg-green-600">Sign Up</Button>
-              </Link>
-            </li>
+            <Link href="/auth/signin" className="block py-2 w-full">
+              Login
+            </Link>
+            <Link href="/auth/signup" className="block py-2 w-full">
+            <Button className="w-full">Sign Up</Button>
+            </Link>
+
+          </li>
+            </>
+          )}
+          </>
+       
+      )}
+        
           </ul>
         </div>
       )}

@@ -6,35 +6,46 @@ import bannerImg1 from '../../image/eid-al-adha-celebration-with-sheep-palm-tree
 import bannerImg2 from '../../image/cows-eating-lush-grass-green-field-front-fuji-mountain-japan.jpg'
 import bannerImg3 from '../../image/photorealistic-view-cow-grazing-outdoors-with-urban-landscape.jpg'
 import bannerImg4 from '../../image/3d838743-1694-4eb3-b764-f77df0314311.jpg'
-import { Button } from "@heroui/react";
+import { Button, Chip } from "@heroui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css'
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import Link from "next/link";
+import { Alegreya } from "next/font/google";
+
+const alegreya = Alegreya({
+    subsets : ["latin"],
+    weight: ["400", "500", "600", "700"], 
+
+})
+
 
 const Banner = () => {
- const slides = [
+
+const slides = [
   {
     id: 1,
     title: "Easily find your preferred Qurbani animal",
-    subtitle: "Modern method, guaranteed",
+    subtitle: "Discover healthy and well-cared animals from trusted sellers,\nensuring a smooth and reliable Qurbani experience.",
     img: bannerImg1,
   },
   {
     id: 2,
     title: "Best collection of cows and goats",
-    subtitle: "Trusted sellers",
+    subtitle: "Explore a wide range of premium cows and goats,\ncarefully selected to meet your expectations and needs.",
     img: bannerImg2,
   },
   {
     id: 3,
     title: "Book your Qurbani animal online",
-    subtitle: "Fast and easy",
+    subtitle: "Reserve your animal from the comfort of your home,\nwith a fast, secure, and hassle-free booking process.",
     img: bannerImg3,
   },
   {
     id: 4,
     title: "Animals according to your budget",
-    subtitle: "Best prices available",
+    subtitle: "Find the perfect Qurbani animal within your budget,\nwithout compromising on quality or health standards.",
     img: bannerImg4,
   },
 ];
@@ -49,7 +60,7 @@ const Banner = () => {
         
         pagination={{ clickable: true }}
         navigation={true}
-        className="w-full h-[300px] md:h-[500px]"
+        className="w-full h-[60vh] md:h-[90vh]"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -65,18 +76,18 @@ const Banner = () => {
               />
 
               <div className="absolute inset-0 bg-black/60 flex items-center">
-                <div className="text-white px-6 md:px-16 max-w-xl">
-                  <h1 className="text-xl md:text-5xl font-bold mb-3">
+                <div className="text-white  container mx-auto">
+                   <Chip className="gap-2 px-4 py-1 text-amber-700  border border-amber-500"><BsFillMoonStarsFill /> Eid Speacial</Chip>
+                  <h1 className={`${alegreya.className} text-xl md:text-5xl font-bold my-3 md:w-xl text-amber-300`}>
                     {slide.title}
                   </h1>
 
-                  <p className="text-sm md:text-lg mb-4">
+                  <p className="text-sm md:text-lg mb-4 text-gray-400 max-w-lg">
                     {slide.subtitle}
                   </p>
+                  <Button className='bg-green-600 rounded-lg'>See Animal</Button>
 
-                  <button className="bg-yellow-500 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">
-                    Browse Animals
-                  </button>
+                 
                 </div>
               </div>
 

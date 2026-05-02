@@ -32,12 +32,12 @@ if(error){
 
     return (
         <div className='relative'>
-            <div className='lg:h-[90vh] h-[50vh]'>
+            <div className='lg:h-screen h-[70vh] md:h-[60vh]'>
             <Image src={formBg} alt='Login Page Background' fill className='object-cover'></Image>
 
             </div>
 
-<div className='absolute top-0 flex items-center justify-center w-full lg:h-[90vh] h-[50vh] inset-0 bg-black/50'>
+<div className='absolute top-0 flex items-center justify-center w-full lg:h-screen h-[70vh] md:h-[60vh] inset-0 bg-black/50'>
 <div className='px-5'>
 
 <h1 className='text-2xl text-center mb-10 text-white'>Login to Your Qurbani Account</h1>
@@ -88,7 +88,7 @@ if(error){
       </TextField>
 
         <Button type="submit" className={'w-full bg-amber-400 rounded-xl'}>
-          Submit
+          Sign In
         </Button>
 
       <div>

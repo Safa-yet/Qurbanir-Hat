@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+import { Alegreya, Poppins, Syne } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Component/Shared Item/Navbar";
 import Footer from "@/Component/Shared Item/Footer";
@@ -10,6 +10,13 @@ const poppins = Poppins({
   subsets: ["latin"],
     weight: ["400", "500", "600", "700"], 
 });
+
+export const syne = Alegreya({
+  subsets : ["latin"],
+    weight: ["400", "500", "600", "700"], 
+
+})
+
 
 export const metadata = {
   title: "QurbanirHat",

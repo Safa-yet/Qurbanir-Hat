@@ -34,7 +34,7 @@ const findCow = data.find((cow)=> cow.id == id);
   <figure className='lg:w-1/2 aspect-square rounded-2xl'>
     <Image
       src={image}
-      alt="Movie" width={500} height={500} className='w-full object-cover rounded-2xl'/>
+      alt="Movie" width={500} height={500} className='w-full object-contain '/>
   </figure>
   <div className="card-body lg:w-1/2 ">
     <h2 className="card-title text-4xl font-bold text-green-700">{name}</h2>

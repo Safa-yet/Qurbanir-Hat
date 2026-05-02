@@ -49,12 +49,12 @@ console.log("SignUp   :" ,data,error);
 
     return (
             <div className='relative'>
-                  <div className='md:h-screen h-[90vh]'>
+                  <div className='h-screen md:h-[60vh]  lg:h-[120vh] '>
                   <Image src={formBg} alt='Login Page Background' fill className='object-cover'></Image>
       
                   </div>
       
-      <div className='absolute top-0 flex items-center justify-center w-full  h-screen inset-0 bg-black/50'>
+      <div className='absolute top-0 flex items-center justify-center w-full md:h-[60vh] lg:h-[120vh]  h-screen inset-0 bg-black/50'>
       <div className='px-5'>
         <div className='mb-6 text-center'>
 <h1 className='text-2xl   text-white'>Create your account</h1>

@@ -2,6 +2,8 @@ import React from 'react';
 import ImageCard from '../Shared Item/ImageCard';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
+import { TbTopologyStar3 } from 'react-icons/tb';
+import { syne } from '@/app/layout';
 
 const FeaturedAnimal = async() => {
     const res = await fetch("http://localhost:3000/data.json");
@@ -10,8 +12,9 @@ const FeaturedAnimal = async() => {
     console.log(data);
 
     return (
-        <div className='container mx-auto py-12'>
-            <h1 className='text-2xl mb-10'>Featured Animal</h1>
+        <div className='container mx-auto py-12' id='featured-animal'>
+            <p className='text-green-600 flex gap-1 font-semibold items-center mb-2'> <TbTopologyStar3 />Top Picks</p>
+            <h1 className={`${syne.className} text-3xl mb-6 `}>Featured <span className='text-green-600'>Animal</span></h1>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-10'>
                 {
                     data.slice(0,6).map(cow=> <ImageCard key={cow.id} cow={cow}></ImageCard>)
@@ -19,9 +22,9 @@ const FeaturedAnimal = async() => {
             </div>
             <div className='flex items-center justify-center my-8'>
 
-            <Link href={'/animal'}>
+            
             <Button className='mx-auto bg-green-600 rounded-lg'size='lg'>See More</Button>
-            </Link>
+         
 
             </div>
         </div>
