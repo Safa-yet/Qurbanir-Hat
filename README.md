@@ -101,6 +101,8 @@ NEXT_PUBLIC_API_URL=your_api_url
 
 ## 📸 Screenshots
 <img width="501" height="349" alt="image" src="https://github.com/user-attachments/assets/c331f1fc-e05b-467f-95ec-52a437e7b305" />
+<img width="1366" height="633" alt="image" src="https://github.com/user-attachments/assets/a4f887da-0692-4243-8e11-aaec424608c6" />
+
 
 
 ---
