@@ -17,6 +17,7 @@ await authClient.updateUser({
     name: userData.name,
 })
     
+  toast.success("Profile updated successfully ✅");
     }
     return (
        <Modal>

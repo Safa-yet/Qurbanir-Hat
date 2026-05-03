@@ -24,8 +24,10 @@ const {data} =await ApiCalling();
             </div>
             <div className='flex items-center justify-center my-8'>
 
-            
+            <Link href='/animal'  >
             <Button className='mx-auto bg-green-600 rounded-lg'size='lg'>See More</Button>
+            
+            </Link>
          
 
             </div>

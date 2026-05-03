@@ -2,6 +2,7 @@
 import ImageCard from "@/Component/Shared Item/ImageCard";
 import React, { useEffect, useState } from "react";
 import { Label, ListBox, Select } from "@heroui/react";
+import { syne } from "../layout";
 
 const AllAnimalPage = () => {
   const [data, setData] = useState([]);
@@ -25,7 +26,11 @@ const AllAnimalPage = () => {
   return (
     <div className="container mx-auto py-12">
       <div className="flex justify-between items-center mb-3">
-        <h1 className="text-2xl">All Animal</h1>
+        <div>
+        <h1 className={`${syne.className} text-3xl `}>All <span className='text-green-600'>Animal</span></h1>
+               <div className='h-1 w-20 bg-green-600 rounded-full mt-2 mb-6 '></div>
+
+        </div>
         <div >
           <p className="mb-1" >Sort By :</p>
 

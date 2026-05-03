@@ -13,6 +13,24 @@ import { BiEnvelope } from 'react-icons/bi';
 import BookForm from '@/Component/Shared Item/BookForm';
 import ApiCalling from '@/app/ApiCalling';
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const { data } = await ApiCalling();
+  const findCow = data.find((cow) => cow.id == id);
+  
+  if (!findCow) {
+    return {
+      title: 'Animal Not Found | Qurbanir Hat',
+      description: 'The requested animal could not be found.',
+    }
+  }
+
+  return {
+    title: `${findCow.name} - ${findCow.type} | Qurbanir Hat`,
+    description: findCow.description,
+  }
+}
+
 const AnimalDetails = async({params}) => {
   const {id} = await params;
 const{data} =await ApiCalling();

@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/Component/Shared Item/Navbar";
 import Footer from "@/Component/Shared Item/Footer";
 import { ToastContainer } from "react-toastify";
+import 'animate.css';
 
 
 

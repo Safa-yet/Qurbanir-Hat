@@ -79,6 +79,7 @@ const Navbar = () => {
               sizes="lg"
               width={300}
               height={100}
+              priority
             ></Image>
             {/* <h1 className="text-xl font-bold text-green-500">QurbanirHatt</h1> */}
           </div>
@@ -205,7 +206,7 @@ const Navbar = () => {
               Login
             </Link>
             <Link href="/auth/signup" className="block py-2 w-full">
-            <Button className="w-full">Sign Up</Button>
+            <Button className="w-full bg-green-500">Sign Up</Button>
             </Link>
 
           </li>
