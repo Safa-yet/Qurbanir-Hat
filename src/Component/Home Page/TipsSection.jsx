@@ -1,4 +1,4 @@
-import { syne } from '@/app/layout';
+import { syne } from '@/app/fonts';
 import { Avatar } from '@heroui/react';
 import React from 'react';
 import { BsCalendar2DateFill } from 'react-icons/bs';

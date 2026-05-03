@@ -3,7 +3,7 @@ import ImageCard from '../Shared Item/ImageCard';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
 import { TbTopologyStar3 } from 'react-icons/tb';
-import { syne } from '@/app/layout';
+import { syne } from '@/app/fonts';
 import ApiCalling from '@/app/ApiCalling';
 
 const FeaturedAnimal = async() => {

@@ -79,7 +79,7 @@ const slides = [
               <div className="absolute inset-0 bg-black/60 flex items-center">
                 <div className="text-white  container mx-auto">
                    <Chip className="gap-2 px-4 py-1 text-amber-700  border border-amber-500"><BsFillMoonStarsFill /> Eid Speacial</Chip>
-                  <h1 className={`${alegreya.className} text-xl md:text-5xl font-bold my-3 md:w-xl text-amber-300 `}>
+                  <h1 className={`${alegreya.className} text-2xl md:text-5xl font-bold my-3 md:w-xl text-amber-300 `}>
                     {slide.title}
                   </h1>
 

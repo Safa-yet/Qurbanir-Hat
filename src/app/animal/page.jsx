@@ -2,7 +2,7 @@
 import ImageCard from "@/Component/Shared Item/ImageCard";
 import React, { useEffect, useState } from "react";
 import { Label, ListBox, Select } from "@heroui/react";
-import { syne } from "../layout";
+import { syne } from "../fonts";
 
 const AllAnimalPage = () => {
   const [data, setData] = useState([]);
