@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐄 QurbanirHat
 
-## Getting Started
+A modern livestock marketplace where users can explore and purchase animals for Qurbani such as cows and goats. Built with a clean UI and smooth user experience.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+
+🔗 https://qurbanir-hat.vercel.app/
+
+---
+
+## 📌 Features
+
+* 🐐 Browse available Qurbani animals (cows, goats, etc.)
+* 🔍 Clean and responsive UI design
+* 📱 Fully responsive for mobile, tablet, and desktop
+* ⚡ Fast performance with optimized build
+* 🔔 Toast notifications for user actions
+* 🎨 Modern UI with Tailwind CSS & DaisyUI
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js (App Router)
+* **Styling:** Tailwind CSS + DaisyUI
+* **Animation:** Animate.css
+* **Notifications:** React Toastify
+* **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── app/
+ │    ├── layout.js
+ │    ├── page.jsx
+ │    └── animal/
+ │         └── page.jsx
+ │
+ ├── Component/
+ │    ├── Shared Item/
+ │    │     ├── Navbar.jsx
+ │    │     └── Footer.jsx
+ │    │
+ │    └── Home Page/
+ │          └── FeaturedAnimal.jsx
+ │
+ └── components/
+       └── ToastProvider.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/qurbanir-hat.git
+```
+
+Go to the project folder:
+
+```bash
+cd qurbanir-hat
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for production:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌐 Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env` file in the root directory and add:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+NEXT_PUBLIC_API_URL=your_api_url
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📸 Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+(Add your project screenshots here)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repo and submit a pull request.
+
+---
+
+## 👨‍💻 Author
+
+**Safayet Ul Islam**
+
+* 💼 LinkedIn:https://www.linkedin.com/in/safayet-ul-islam/
+* 📧 Email: [mdsafayet315@gmail.com](mailto:mdsafayet315@gmail.com)
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
