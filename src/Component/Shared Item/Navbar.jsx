@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -38,6 +39,14 @@ const Navbar = () => {
     </>
   );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+const logOut =async ()=>{
+
+await authClient.signOut()
+toast.success("LogOut Successfully")
+}
+
+
   return (
     <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
       <header className="mx-auto flex   items-center justify-between container">
@@ -126,7 +135,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a onClick={()=>authClient.signOut()}>Logout</a>
+                      <a onClick={logOut}>Logout</a>
                     </li>
                   </ul>
                 </div>

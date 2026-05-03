@@ -1,7 +1,7 @@
 "use client";
 import UpdateProfile from "@/Component/Shared Item/UpdateProfile";
 import { authClient } from "@/lib/auth-client";
-import { Avatar } from "@heroui/react";
+import { Avatar, Spinner } from "@heroui/react";
 import Image from "next/image";
 import React from "react";
 import { RiInformation2Fill, RiInformationFill } from "react-icons/ri";
@@ -16,7 +16,10 @@ const UserProfile = () => {
       <div className="h-1.5 w-16 bg-green-500 mb-6 mx-auto mt-2 rounded-full"></div>
 
       {isPending ? (
-        <h1>Loading</h1>
+         <div className="flex flex-col justify-center items-center gap-2 h-[80vh]">
+                <Spinner color="success" size='2xl'/>
+        
+              </div>
       ) : (
         <div className="max-w-4xl w-full  bg-white rounded-2xl shadow-2xl border border-green-200 p-6 grid md:grid-cols-2 gap-6 items-center">
           <div className="flex flex-col items-center text-center border-r border-gray-200 pr-4">

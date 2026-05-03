@@ -2,6 +2,7 @@ import { Button } from '@heroui/react';
 import { FaApple, FaGithub } from 'react-icons/fa';
 import { createAuthClient } from "better-auth/client";
 import { FcGoogle } from 'react-icons/fc';
+import { toast } from 'react-toastify';
 
 const authClient = createAuthClient();
 const SocialLink = () => {
@@ -10,6 +11,7 @@ const SocialLink = () => {
       const data = await authClient.signIn.social({
         provider: "google",
       });
+      toast("Login Successfull")
     };
     return (
         <div className="flex gap-3 items-center justify-center mt-5">
