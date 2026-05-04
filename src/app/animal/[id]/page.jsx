@@ -53,7 +53,7 @@ const findCow = data.find((cow)=> cow.id == id);
         </div>
 
 <div className="card card-side  flex-col flex md:flex-row justify-between items-center h-[80vh] rounded-2xl">
-  <figure className='lg:w-1/2 aspect-square rounded-2xl'>
+  <figure className='lg:w-1/2 w-full aspect-square rounded-2xl'>
     <Image
       src={image}
       alt="Movie" width={500} height={500} className='w-full object-contain '/>
