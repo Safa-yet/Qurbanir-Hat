@@ -3,13 +3,14 @@ import React from 'react';
 import NotFoundImage from '../image/canvas.png'
 import { Button } from '@heroui/react';
 import Link from 'next/link';
+import NotFoundLottie from '@/Component/Shared Item/NotFoundLottie';
 export const metadata = {
   title: "404-QurbanirHat",
 };
 const NotFoundPage = () => {
     return (
-        <div className='h-screen flex items-center justify-center flex-col'>
-            <Image src={NotFoundImage} alt='Not Found image' width={500} height={500}></Image>
+        <div className='lg:h-screen h-[60vh] flex items-center justify-center flex-col'>
+            <NotFoundLottie></NotFoundLottie>
             <h1 className='text-2xl my-3'>Page Not Available</h1>
             <Link href="/">
             <Button className='bg-green-500'>Go Back</Button>

@@ -11,7 +11,6 @@ const SocialLink = () => {
       const data = await authClient.signIn.social({
         provider: "google",
       });
-      toast("Login Successfull")
     };
     return (
         <div className="flex gap-3 items-center justify-center mt-5">
