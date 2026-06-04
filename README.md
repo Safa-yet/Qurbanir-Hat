@@ -3,6 +3,8 @@
 A modern livestock marketplace where users can explore and purchase animals for Qurbani such as cows and goats. Built with a clean UI and smooth user experience.
 
 ---
+<img width="1365" height="634" alt="image" src="https://github.com/user-attachments/assets/352c856f-5acb-4a13-8b78-7ef491e4b71c" />
+
 
 ## 🚀 Live Demo
 
